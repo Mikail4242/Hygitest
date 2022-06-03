@@ -8,6 +8,11 @@ body {
 .bee-cursor {
 	cursor: url("bee-cursos-111.png"), auto;
 }
+.carousel-control-prev,
+.carousel-control-next {
+	height: 100px;
+	padding-top: 300px;
+}
 
 .navbar-color {
 	background-color: #e58864;
@@ -21,15 +26,15 @@ body {
 }
 .custom-image-cover {
 	background-size: cover;
-	min-height: 60vh;
-}
-.image-logo {
-	height: 100px;
-	width: 100px;
 }
 .image-logo-footer {
+	background-image: url("logoonly-01.png");
+	background-repeat: no-repeat;
 	height: 100px;
 	width: 100px;
+	position: relative;
+	left: 20px;
+	top: 10px;
 }
 .partner-logo {
 	height: 100px;
@@ -46,6 +51,9 @@ body {
 .text-color-products,
 .mobile-text-info {
 	margin: 0px;
+}
+.text-color-products {
+	padding-top: 20px;
 }
 .mobile-text-info {
 	font-size: 13px;
@@ -105,9 +113,7 @@ body {
 }
 .mobile-icons {
 	width: 70px;
-	height: 50px;
 }
-
 /* Products img */
 
 .gallery {
@@ -119,8 +125,10 @@ body {
 
 .gallery img {
 	background-color: white;
-	padding: 15px;
 	cursor: url("bee-cursos-111.png"), auto;
+}
+.img-viewport {
+	height: 35vh;
 }
 
 /* Modal img */
@@ -132,14 +140,12 @@ body {
 
 .img-item .card:hover .img-thumb {
 	cursor: url("bee-cursos-111.png"), auto;
-	transform: scale(1.4);
+	transform: scale(1.2);
 	filter: brightness(1);
 }
 
 .img-container {
 	width: calc(100%);
-	height: 40vh;
-	overflow: hidden;
 }
 .img-thumb {
 	width: calc(100%);
@@ -230,39 +236,6 @@ img#img-viewer {
 
 /* end */
 
-/* CSS button animation */
-#btn {
-	border: 2px solid #e58864;
-	color: #e86f30;
-	cursor: url("bee-cursos-111.png"), auto;
-	position: relative;
-	overflow: hidden;
-	transition: all 0.5s;
-	border-radius: 10px;
-}
-
-#btn:before {
-	width: 100%;
-	height: 100%;
-	content: "";
-	margin: auto;
-	position: absolute;
-	top: -100%;
-	left: -100%;
-	background: #e86f30;
-	transition: all 0.3s;
-	z-index: -1;
-}
-#btn:hover {
-	color: white;
-}
-#btn:hover:before {
-	top: 0;
-	left: 0;
-}
-
-/* end */
-
 /* button back to top */
 .top {
 	--offset: 50px;
@@ -308,16 +281,38 @@ img#img-viewer {
 	width: 140px;
 	background-color: white;
 	color: #e86f30;
+	position: relative;
+	top: 10px;
 }
-.cookie-color {
+.cookie-position {
+	position: relative;
+	top: 20px;
+}
+.cookie-color,
+.accept {
 	color: #e86f30;
 }
-a.cookie-color{
+a.accept {
 	text-decoration: none;
 	color: #e86f30;
 }
 .hidden {
-	opacity: 0;
+	display: none;
+}
+.emag-icon-01 {
+	width: 70px;
+	height: 20px;
+	position: relative;
+	top: 25px;
+}
+.img-item-vazelin-7gr {
+	width: 100px;
+}
+.img-item-vazelin {
+    width: 120px;
+}
+#btn {
+	cursor: url("bee-cursos-111.png"), auto;
 }
 /* Cookie styling end */
 
@@ -343,12 +338,12 @@ a.cookie-color{
 		height: 100px;
 	}
 	.image-tablet {
-		background-image: url("logo only-01.svg");
+		background-image: url("logoonly-01.png");
 		background-repeat: no-repeat;
 		height: 110px;
 		width: 100px;
 		position: relative;
-		bottom: 15px;
+		left: 12px;
 	}
 	.navbar-center {
 		display: flex;
@@ -362,10 +357,20 @@ a.cookie-color{
 		height: 100px;
 	}
 	.img-item-vazelin {
-		width: 170px;
+		width: 130px;
 	}
 	.mobile-text-info {
 		font-size: 16px;
+	}
+	.partner-logo {
+		height: 110px;
+		width: 140px;
+	}
+	.last-logo {
+		width: 300px;
+	}
+	.header-text {
+		padding-top: 20px;
 	}
 }
 
@@ -426,6 +431,9 @@ a.cookie-color{
 	.image-logo-footer {
 		height: 100px;
 		width: 240px;
+		position: relative;
+		left: 90px;
+		top: 10px;
 	}
 	.gmap_canvas {
 		margin: 0 auto;
@@ -446,7 +454,25 @@ a.cookie-color{
 	}
 	.custom-image-cover-text {
 		margin: 0 auto;
-		width: 0px;
+		width: 700px;
+	}
+	.custom-image-cover {
+		margin: 0 auto;
+	}
+	.image-tablet {
+		left: 20px;
+	}
+	.partner-all-logo{
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-item-vazelin {
+		width: 140px;
+	}
+	.carousel-item{
+		background-color: #dcdcdc;
 	}
 }
 @media (min-width: 992px) {
@@ -464,8 +490,12 @@ a.cookie-color{
 		width: 33%;
 	}
 	.image-logo-footer {
-		height: 100px;
-		width: 200px;
+		background-image: url("logoonly-01.png");
+		background-repeat: no-repeat;
+		width: 100px;
+		position: relative;
+		left: 25px;
+		top: 10px;
 	}
 	.desktop-color {
 		background-color: white;
@@ -479,7 +509,7 @@ a.cookie-color{
 	}
 	.last-logo {
 		position: relative;
-		bottom: 20px;
+		bottom: 0px;
 		right: 10px;
 	}
 	.gmap_canvas {
@@ -499,6 +529,8 @@ a.cookie-color{
 	.emag-icon {
 		position: relative;
 		right: 30px;
+		position: relative;
+		top: 15px;
 	}
 	.top {
 		display: none;
@@ -549,10 +581,6 @@ a.cookie-color{
 		width: 80px;
 		background-color: #00000033;
 	}
-	.mobile-icons {
-		width: 100px;
-		height: 75px;
-	}
 	.menu-space {
 		padding-left: 40px;
 	}
@@ -561,12 +589,54 @@ a.cookie-color{
 		right: 60px;
 	}
 	.image-tablet {
-		left: 20px;
+		left: 35px;
 	}
 	.carousel-item {
 		background-color: #b7b7b7;
 	}
 	.mobile-text-info {
 		font-size: 16px;
+	}
+	/* CSS button animation */
+	#btn {
+		border: 2px solid #e58864;
+		color: #e86f30;
+		cursor: url("bee-cursos-111.png"), auto;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.5s;
+		border-radius: 10px;
+	}
+
+	#btn:before {
+		width: 100%;
+		height: 100%;
+		content: "";
+		margin: auto;
+		position: absolute;
+		top: -100%;
+		left: -100%;
+		background: #e86f30;
+		transition: all 0.3s;
+		z-index: -1;
+	}
+	#btn:hover {
+		color: white;
+	}
+	#btn:hover:before {
+		top: 0;
+		left: 0;
+	}
+
+	/* end */
+	.emag-icon-01 {
+		width: 70px;
+		height: 20px;
+		position: relative;
+		top: 10px;
+	}
+	.desk-hygi {
+		position: relative;
+		left: 40px;
 	}
 }

@@ -33,11 +33,3 @@ $(function () {
 			.attr("src", $(".img-thumb").eq(prev_index).attr("src"));
 	});
 });
-
-$(".carousel").carousel({
-	pause: "false",
-	interval: 2500,
-	next: true,
-	prev: true,
-	wrap: true,
-});

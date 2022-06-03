@@ -10,7 +10,7 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
-		<link rel="icon" href="logo only orange-01.svg">
+		<link rel="icon" type="image/png" href="favicon.png" />
 		<link rel="stylesheet" href="styles.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
 		<title>Hygitest</title>
@@ -24,12 +24,12 @@
 					<a
 						href="index.html"
 						id="btn"
-						class="nav-link active text-white color-change text-mobile-size position-text d-sm-none"
+						class="nav-link active text-white text-mobile-size position-text d-sm-none"
 						>НАЧАЛО</a
 					>
 				</li>
 			</ul>
-			<img class="image-logo" src="logo only-01.svg" alt="Responsive image" />
+			<img class="image-logo" src="logoonly-01.png" alt="Responsive image" />
 			<button
 				type="button"
 				data-bs-toggle="collapse"
@@ -102,25 +102,25 @@
 			</div>
 		</div>
 		<div class="container bg-white partner-size-width">
-			<div class="row d-flex justify-content-center">
+			<div class="row d-flex justify-content-center partner-all-logo">
 				<img
 					class="partner-logo"
-					src="phoenixlogo-01.svg"
+					src="phoenixlogo_01.png"
 					alt="Responsive image"
 				/>
 				<img
 					class="partner-logo"
-					src="sting logo-01.svg"
+					src="sting_logo_01.png"
 					alt="Responsive image"
 				/>
 				<img
 					class="partner-logo"
-					src="ecomet logo-01.svg"
+					src="ecomet_logo_01.png"
 					alt="Responsive image"
 				/>
 				<img
 					class="partner-logo last-logo"
-					src="velevi farma-01.svg"
+					src="velevi_farma_01.png"
 					alt="Responsive image"
 				/>
 			</div>
@@ -130,11 +130,10 @@
 			<div
 				class="row d-flex justify-content-center flex-md-row align-items-center"
 			>
-				<img
-					class="image-logo-footer tablet-width"
-					src="logo only-01.svg"
-					alt="Responsive image"
-				/>
+			<div
+			class="image-logo-footer tablet-width"
+			alt="Responsive image"
+		> </div>
 				<p class="text-center text-white tablet-width desk-hygi text-roboto">© ХИГИТЕСТ ООД, 1984</p>
 				<a
 					class="navbar-brand text-white text-center footer-text tablet-size flex-item bee-cursor"
@@ -166,28 +165,28 @@
 					href="location.html"
 					>КЪДЕ ДА НИ НАМЕРИТЕ</a
 				>
-				<a class="d-flex justify-content-center tablet-icons bee-cursor" href="https://www.facebook.com/higitest">
+				<a class="d-flex justify-content-center tablet-icons bee-cursor" href="https://www.facebook.com/higitest" target="_blank">
 				<img
 					class="mobile-icons"
-					src="fb white-01.svg"
+					src="fbwhite-01.png"
 					width="70px"
 					height="70px"
 					alt="Responsive image"
 				/>
 				</a>
-				<a class="d-flex justify-content-center tablet-icons bee-cursor" href="https://instagram.com/bgpropolis?igshid=YmMyMTA2M2Y=">
+				<a class="d-flex justify-content-center tablet-icons bee-cursor" href="https://instagram.com/bgpropolis?igshid=YmMyMTA2M2Y=" target="_blank">
 				<img
 					class="mobile-icons"
-					src="ig white-01.svg "
+					src="igwhite-01.png"
 					width="70px"
 					height="70px"
 					alt="Responsive image"
 				/>
 				</a>
-				<a class="d-flex justify-content-center tablet-icons emag-icon bee-cursor" href="https://www.emag.bg/drugi-hranitelni-dobavki/vendor/kds/c?ref=bc">
+				<a class="d-flex justify-content-center tablet-icons emag-icon bee-cursor" href="https://www.emag.bg/drugi-hranitelni-dobavki/vendor/kds/c?ref=bc" target="_blank">
 				<img
-					class="mobile-icons"
-					src="emag-01.svg"
+					class="mobile-icons emag-icon-01"
+					src="emag-01.png"
 					width="100px"
 					height="80px"
 					alt="Responsive image"
@@ -200,8 +199,15 @@
 					бул. „Акад. Иван Евстатиев Гешов“ №15
 				</p>
 				<p class="text-center text-white tablet-size tablet-adress desk-text text-roboto">
-					тел. 02 9541151
+					<span>тел.</span>
+					<a href="tel:02 9541151">02 9541151</a>
 				</p>
+			</div>
+			<div id="consent-popup" class="hidden">
+				<p class="cookie-styling">С избиране на опцията „Приемам всички“, Вие се съгласявате да приемете всички бисквитки с цел подобряване на навигацията, анализ на посещенията и подобряване на маркетинговите ни активности. При избор на „Отхвърлям всички“ ще се инсталират само строго необходимитe бисквитки, които са нужни за правилното функциониране на уебсайта ни.<br />
+					<a class="accept" class="cookie-color" href="#"><span class="cookie-option">Отказвам всички</span></a><br />
+					<a class="accept" class="cookie-color" href="#"><span class="cookie-option cookie-position">Приемам всички</span></a>
+			</p>
 			</div>
 		</div>
 
@@ -215,5 +221,6 @@
 			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 			crossorigin="anonymous"
 		></script>
+		<script src="cookie.js"></script>
 	</body>
 </html>
